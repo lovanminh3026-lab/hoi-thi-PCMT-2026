@@ -1,0 +1,9 @@
+ẢNH NỀN MARKET MỞ ĐẦU VÀ PHẦN 3
+
+1. Chuẩn bị ảnh market nằm ngang, tỷ lệ 16:9, nên có kích thước 1920 x 1080 px.
+2. Đổi tên ảnh thành: anh-nen-phan-3-v2.png
+3. Chép ảnh vào đúng thư mục assets này.
+4. Mở lại index.html hoặc nhấn Ctrl + F5 để trình duyệt tải ảnh mới.
+
+Lưu ý: giữ nguyên chính xác tên tệp. Bản V11.4 đã có sẵn ảnh Market cá nhân hóa đã tinh giản núi và đổi màu tiêu đề chính.
+Màn hình Market và Phần 3 cùng dùng ảnh này, hiển thị sáng nguyên bản và không phủ lớp màu tối.

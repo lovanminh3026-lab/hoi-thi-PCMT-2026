@@ -1,0 +1,16 @@
+GAME MA TÚY - VERSION 11.4
+
+- Sửa điều khiển đồng hồ bằng phím SPACE.
+- Thêm màn hình Market mở đầu dùng chung ảnh nền Phần 3.
+- Nhập kín điểm Phần 3 hai lần, chỉ công bố khi MC xác nhận.
+- Tự động khôi phục đúng màn hình và thời gian còn lại sau sự cố.
+- Thu nhỏ bảng điểm kín, phân màu 4 đội và luôn mở ô trống.
+- Chỉ giữ biểu tượng cúp công bố; nút sửa điểm kín luôn là dấu cộng.
+- Nút mở chương trình đồng thời bật toàn màn hình.
+- Đổi tên công cụ sao lưu/khôi phục để chuyển máy rõ ràng hơn.
+- Luôn hiển thị biểu tượng cúp, kể cả trước khi nhập điểm.
+- Làm đồng hồ Phần 3 trong suốt hơn; các nút mờ và sáng khi rê chuột.
+- Hỗ trợ tự phát assets/music/nhac-an-mung.mp3 ở màn hình ăn mừng.
+- Nhạc ăn mừng tự lặp liên tục cho tới khi rời màn hình.
+- Bổ sung ảnh Market 16:9 cá nhân hóa cho hội thi cấp trường năm 2026.
+- Tinh giản cảnh núi, tăng khoảng cách tiêu đề và đổi dòng chủ đề chính sang trắng–xanh.

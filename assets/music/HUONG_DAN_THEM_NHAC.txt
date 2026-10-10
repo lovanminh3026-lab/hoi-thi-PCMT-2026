@@ -1,0 +1,10 @@
+NHẠC MÀN HÌNH ĂN MỪNG
+
+1. Chọn một bài hát định dạng MP3.
+2. Đổi tên chính xác thành: nhac-an-mung.mp3
+3. Chép tệp đó vào thư mục assets/music này.
+4. Mở lại game. Khi bấm nút ĂN MỪNG, bài hát sẽ tự chạy từ đầu.
+5. Khi bài hát chạy hết, game sẽ tự phát lại liên tục.
+6. Khi quay lại bảng xếp hạng hoặc sang màn hình khác, nhạc sẽ tự dừng.
+
+Nếu không chép tệp nhạc, game vẫn hoạt động bình thường nhưng màn ăn mừng không có nhạc.

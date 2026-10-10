@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#087c8c">
+  <meta name="description" content="Ứng dụng tổ chức Hội thi tuyên truyền phòng, chống ma túy tại Trường PTDT Nội trú THPT tỉnh Lai Châu.">
+  <title>Hội thi tuyên truyền phòng, chống ma túy</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true"><span>✓</span></div>
+    <div class="brand"><div class="school">TRƯỜNG PTDT NỘI TRÚ THPT TỈNH LAI CHÂU</div><div class="event">Hội thi tuyên truyền phòng, chống ma túy</div></div>
+    <div id="topScoreStrip" class="top-score-strip" aria-label="Điểm hiện tại"></div>
+    <div class="top-actions">
+      <button class="icon-btn" onclick="goHome()" title="Trang chủ">⌂ Trang chủ</button>
+      <button class="icon-btn" onclick="showScoreboard()" title="Bảng điểm">🏆 Điểm</button>
+      <button class="icon-btn" onclick="openSettings()" title="Thiết lập">⚙</button>
+      <button class="icon-btn" onclick="toggleFullscreen()" title="Toàn màn hình">⛶</button>
+    </div>
+  </header>
+  <main id="screen"></main>
+</div>
+
+<dialog id="scoreDialog"><div class="modal">
+  <h3 id="scoreDialogTitle">Nhập điểm</h3><p id="scoreDialogHint"></p><div id="scoreInputs" class="score-inputs"></div>
+  <div class="actions"><button class="btn btn-soft" onclick="scoreDialog.close()">Hủy</button><button class="btn btn-primary" onclick="saveDialogScores()">Lưu điểm</button></div>
+</div></dialog>
+<dialog id="stageScoreDialog" class="stage-score-dialog"><div class="modal stage-score-modal">
+  <div class="modal-heading"><div><small>PHẦN 3 · CHẾ ĐỘ KÍN</small><h3>NHẬP ĐIỂM HAI LẦN</h3><p>Các ô luôn mở ở trạng thái trống; hai lần nhập phải trùng nhau.</p></div><button class="dialog-close" onclick="stageScoreDialog.close()" aria-label="Đóng">×</button></div>
+  <div id="stageScoreInputs" class="stage-score-inputs"></div>
+  <div class="stage-score-footer"><span>Điểm chỉ xuất hiện khi bấm <b>CÔNG BỐ KẾT QUẢ</b>.</span><div class="actions"><button class="btn btn-soft" onclick="stageScoreDialog.close()">HỦY</button><button class="btn btn-green" onclick="saveAllP3Scores()">KHÓA VÀ LƯU KÍN</button></div></div>
+</div></dialog>
+<dialog id="settingsDialog"><div class="modal settings-modal">
+  <div class="modal-heading"><div><h3>Thiết lập cuộc thi</h3><p>Mặc định là Đội 1–4; có thể đổi tên, sao lưu hoặc khôi phục phiên thi.</p></div><button class="dialog-close" onclick="settingsDialog.close()" aria-label="Đóng">×</button></div>
+  <div id="teamNameInputs" class="score-inputs"></div>
+  <div class="settings-tools">
+    <button class="btn btn-soft" onclick="exportSession()">TẢI PHIÊN ĐỂ CHUYỂN MÁY</button>
+    <button class="btn btn-soft" onclick="document.getElementById('restoreInput').click()">MỞ PHIÊN TỪ MÁY KHÁC</button>
+    <button class="btn btn-danger" onclick="settingsDialog.close();resetAll()">Reset toàn bộ cuộc thi</button>
+  </div>
+  <div class="actions"><button class="btn btn-soft" onclick="settingsDialog.close()">Hủy</button><button class="btn btn-primary" onclick="saveTeamNames()">Lưu tên đội</button></div>
+</div></dialog>
+<input id="restoreInput" class="hide" type="file" accept="application/json,.json" onchange="restoreSession(event)">
+<canvas id="fireworks" class="fireworks" aria-hidden="true"></canvas>
+<audio id="celebrationMusic" preload="auto" loop src="assets/music/nhac-an-mung.mp3"></audio>
+<div id="toast" class="toast"></div>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
